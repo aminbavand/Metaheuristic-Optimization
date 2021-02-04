@@ -1,4 +1,4 @@
-from traveling_salesman import traveling_salesman
+from Traveling_Salesman import traveling_salesman
 import matplotlib.pyplot as plt
 import numpy as np
 
