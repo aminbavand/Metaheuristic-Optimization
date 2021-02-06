@@ -22,6 +22,7 @@ Applies the differential evolution algorithm to find the best tour consisting of
 
 
 After running Initialization.py:
+
 ![](/images/1.png)
 
 
