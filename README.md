@@ -21,6 +21,8 @@ Applies the genetic algorithm to find the best tour consisting of 6 cities.
 Applies the differential evolution algorithm to find the best tour consisting of 6 cities.
 
 
+After running Initialization.py:
+![](/images/1.png)
 
 
 ### Exhaustive search
@@ -46,7 +48,11 @@ Advantage of exhastive search in this problem is that we can find the optimum so
 I used two for loops. The first loop finds every combination of 6 cities among 50 cities and the second loop finds all the 120 permuations for that combination. Before that, I constructed a 120*6 array that gives us all the 120 permutations for one combination and used this matrix in second loop every time (to avoid redundancy and save time). Every time, the code checks out whether or noty the current permutation is the best tour found so far and if it is, it preserves that tour until it finds another tour that its length is better than current best tour.
 
 
+After running Exhaustive_Search.py:
 
+![](/images/2.png)
+
+![](/images/3.png)
 
 
 
@@ -62,6 +68,9 @@ I ran this algorithm multilpe times. In each run, the terminated criterion was d
 
 Advantage of using random search in traveling salesman problem is that it is very fast, but its disadvantage is that it might get stuck in a local minimum. Also, doesn't matter how much we run it, still we cannot be sure that the best solution that we have found so far, is actually the best answer to the problem.
 
+After running Random_Search.py:
+
+![](/images/4.png)
 
 ### Genetic Algorithm
 
@@ -74,7 +83,9 @@ Genetic algorithm is a powerful tool for the problems that are facing a large vo
 
 The parameters that can be tuned are the population size (ps), mutation probability (miu), crossover points (k). Note that I used a pooling mate size equal to population size. At first, I set ps=100 and the final answer was often good (always under 70 length which is in the top 1% of the answers), but it could reach 52 (length of minimum tour) only a few times. So, I decided to begin with a more populated one and I set ps=1000 and the results got much more improved. I also changed the numbers of crossover points and ran the algorithm few times for each, and 1 point crossover led to better results. Also mutation probability of 0.2 led to better results. Note that after setting population size to 1000, the speed of algorithm got decreased, so I changed stopping criterion such that it stops the algorithm if after 100 iterations the best obtained individual didn't improve (instead of 500 which was was my stopping criterion in other methods).
 
+After running Genetic_Algorithm.py:
 
+![](/images/5.png)
 
 ### Differential Evolution
 
@@ -93,7 +104,9 @@ In DE, there are 3 important parameters that affect the final result: the popula
 
 
 
+After running Differential_Evolution.py:
 
+![](/images/6.png)
 
 
 
