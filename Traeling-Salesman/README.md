@@ -23,7 +23,7 @@ Applies the differential evolution algorithm to find the best tour consisting of
 
 After running Initialization.py:
 
-![](/images/1.png)
+![](./images/1.png)
 
 
 ### Exhaustive search
@@ -51,9 +51,9 @@ I used two for loops. The first loop finds every combination of 6 cities among 5
 
 After running Exhaustive_Search.py:
 
-![](/images/2.png)
+![](./images/2.png)
 
-![](/images/3.png)
+![](./images/3.png)
 
 
 
@@ -71,7 +71,7 @@ Advantage of using random search in traveling salesman problem is that it is ver
 
 After running Random_Search.py:
 
-![](/images/4.png)
+![](./images/4.png)
 
 ### Genetic Algorithm
 
@@ -86,7 +86,7 @@ The parameters that can be tuned are the population size (ps), mutation probabil
 
 After running Genetic_Algorithm.py:
 
-![](/images/5.png)
+![](./images/5.png)
 
 ### Differential Evolution
 
@@ -107,7 +107,7 @@ In DE, there are 3 important parameters that affect the final result: the popula
 
 After running Differential_Evolution.py:
 
-![](/images/6.png)
+![](./images/6.png)
 
 
 
